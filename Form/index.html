@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head> 
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Nama Pelanggan</td>
+                <td>:</td>
+                <td><input type="text" required="" maxlength="30" placeholder="Nama" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" required="" placeholder="Email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Jam Keberangkatan</td>
+                <td>:</td>
+                <td><input type="time" required="" placeholder="Jam Keberangkatan" id="jam" name="jam"></td>
+            </tr>
+            <tr>
+                <td>Tujuan Keberangkatan</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Tujuan Keberangkatan" id="tujuan" name="tujuan"></td>
+            </tr>
+            <tr>
+                <td>Masukan Jumlah Tiket</td>
+                <td>:</td>
+                <td><input type="number" min="1" max="10" placeholder="Jumlah Tiket" id="jml_tiket" name="jml_tiket"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

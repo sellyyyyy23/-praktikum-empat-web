@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script>
+        function send() {
+        let isipesan = document.getElementById("pesan").value;
+        document.getElementById("isi").innerHTML += isipesan + "<br/>";
+        document.getElementById("pesan").value = "";
+        return false;
+        }
+    </script>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            float: left;
+            margin: 20px;
+            text-align: center;
+        }
+        .kotak { 
+            border: 1px 
+            solid black; 
+        }
+    </style>
+</head>
+<body>
+    <div id="isi" class="kotak">
+        <table>
+            <tr>
+                <td><input id="pesan" style="width: 100%" type="text" name="pesan"></td>
+                <td><button type="submit" onclick="return send()">SEND</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

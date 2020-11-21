@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kurs Mata Uang</title>
+		<script src="script.js"></script>
+		<style>
+			div{
+				width: 295px;
+				height: 250px;
+				float: left;
+				margin: 20px;
+				text-align: center;
+				align-content: center;
+			}
+			.satu { 
+				align-content: center;
+				border: 1px 
+				solid black; 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="satu">
+            <h3 align="center">KURS MATA UANG</h3>
+            <label>Masukan Nilai Mata Uang Asing : </label>
+            <input type="text" id="nilai" value="">						
+            <p>Pilih Mata Uang:
+                <select name='Mata Uang' id="kurs">
+                    <option value="dollar" id="dollar">Dollar US</option>
+                    <option value="dollarsg" id="dollarsg">Dollar Singapore</option>
+                    <option value="ringgit" id="ringgit">Ringgit Malaysia</option>
+                    <option value="yen" id="yen">Yen Jepang</option>
+                    <option value="euro" id="euro">Euro</option>
+                    <option value="riyal" id="riyal">Riyal Arab Saudi</option>
+                </select>
+			</p>
+			<input type="button" value="tukar" name="tukar" onclick="ubah()">
+			<br/>
+			<br/>
+            <label>Hasil Nilai Rupiah<h4 id="hasil"></h4></label>
+        </div>
+        
+	</body>
+</html>

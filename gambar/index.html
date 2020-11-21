@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Gambar</title>
+    <script>
+        function ganti() {
+        let gambar = document.getElementById("list");
+        let idx = gambar.selectedIndex;
+        alert("Ini Gambar " + gambar[idx].value);
+        let area_gambar = document.getElementById("gambar")
+        area_gambar.src="img/"+gambar[idx].value+".jpg";
+    }
+    </script>
+    <style>
+        img{
+            width: 30%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Member BTS</h2>
+    <select onchange="ganti()" id="list">
+        <option value="BTS" class="gambar">Pilih Member BTS</option>
+        <option value="Jungkook">Jungkook</option>
+        <option value="Rap Monster">Rap Monster</option>
+        <option value="Jin">Jin</option>
+        <option value="Suga">Suga</option>
+        <option value="J-Hope">J-Hope</option>
+        <option value="Park Ji Min">Park Ji Min</option>
+        <option value="V">V</option>
+    </select>
+    <br />
+    <img src="img/bts.jpg" alt="gambar bts" id="gambar">
+</body>
+</html>
